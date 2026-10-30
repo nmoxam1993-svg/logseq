@@ -8,7 +8,7 @@ android {
     namespace "com.logseq.app"
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.logseq.app"
+        applicationId "com.logseq.app.nick"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 89
