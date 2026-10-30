@@ -25,7 +25,7 @@
 (def COGNITO-CLIENT-ID cognito-config/COGNITO-CLIENT-ID)
 (def OAUTH-DOMAIN cognito-config/OAUTH-DOMAIN)
 
-(def API-DOMAIN "api.logseq.com")
+(def API-DOMAIN "192.168.2.22:8080")
 (def COGNITO-IDP "https://cognito-idp.us-east-1.amazonaws.com/")
 (def REGION "us-east-1")
 (def USER-POOL-ID "us-east-1_dtagLnju8")

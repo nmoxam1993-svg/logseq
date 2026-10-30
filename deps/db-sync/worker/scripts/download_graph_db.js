@@ -8,7 +8,7 @@ const { parseArgs } = require("node:util");
 const transit = require("transit-js");
 const { fail } = require("./graph_user_lib");
 
-const defaultBaseUrl = "https://api.logseq.com";
+const defaultBaseUrl = "https://192.168.2.22:8080";
 
 function printHelp() {
   console.log(`Download a graph snapshot and store it as a local sqlite debug DB.
@@ -20,7 +20,7 @@ Usage:
 Options:
   --graph-id <id>        Target graph id. Required.
   --admin-token <token>  Admin token. Defaults to DB_SYNC_ADMIN_TOKEN.
-  --base-url <url>       Worker base URL. Defaults to DB_SYNC_BASE_URL or https://api.logseq.com.
+  --base-url <url>       Worker base URL. Defaults to DB_SYNC_BASE_URL or https://192.168.2.22:8080.
   --output <path>        SQLite output path. Defaults to ./tmp/graph-<graph-id>.snapshot.sqlite.
   --help                 Show this message.
 

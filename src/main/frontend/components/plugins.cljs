@@ -529,7 +529,7 @@
           :on-change   #(set-opts! (assoc opts :test (util/trim-safe (util/evalue %))))
           :value       (or (:test opts) "")}]
         [:datalist#proxy-test-url-datalist
-         [:option "https://api.logseq.com/logseq/version"]
+         [:option "https://192.168.2.22:8080/logseq/version"]
          [:option "https://logseq-connectivity-testing-prod.s3.us-east-1.amazonaws.com/logseq-connectivity-testing"]
          [:option "https://www.google.com"]
          [:option "https://s3.amazonaws.com"]

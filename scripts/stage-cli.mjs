@@ -1,0 +1,1 @@
+import fs from 'node:fs'; fs.copyFileSync('cli/_build/default/dist/logseq-cli.js', 'static/logseq-cli.js'); fs.writeFileSync('static/pnpm-workspace.yaml', 'packages:\n  - .\n'); console.log('[stage-cli] copied logseq-cli.js and isolated static workspace');

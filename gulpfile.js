@@ -275,9 +275,9 @@ const prepareElectronMaker = async () => {
   cp.execSync('pnpm webpack-app-build', {
     stdio: 'inherit',
   })
-  cp.execSync('pnpm cli:release', {
-    stdio: 'inherit',
-  })
+  //cp.execSync('pnpm cli:release', {
+    //stdio: 'inherit',
+  //})
   cp.execSync('pnpm desktop:prepare-runtime-js', {
     stdio: 'inherit',
   })
@@ -296,7 +296,7 @@ const prepareElectronMaker = async () => {
   pkg.version = version
   fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2))
 
-  await common.pruneDesktopPackageFiles()
+  //await common.pruneDesktopPackageFiles()
 
   if (!fs.existsSync(path.join(outputPath, 'node_modules'))) {
     cp.execSync(staticInstallCommand, {
@@ -336,3 +336,7 @@ exports.build = gulp.series(common.clean, common.syncResourceFile,
   common.syncAssetFiles, css.buildCSS)
 exports.buildMobile = gulp.series(common.clean, common.syncResourceFile,
   common.syncAssetFiles, css.buildMobileCSS)
+
+
+
+

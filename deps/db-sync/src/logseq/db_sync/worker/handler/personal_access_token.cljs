@@ -12,7 +12,7 @@
 (def ^:private permissions #{"read" "write" "both"})
 (def ^:private rtc-groups #{"team" "rtc_2025_07_10"})
 (def ^:private collection-path "/api/v1/personal-access-tokens")
-(def ^:private user-info-url "https://api.logseq.com/file-sync/user_info")
+(def ^:private user-info-url "https://192.168.2.22:8080/file-sync/user_info")
 
 (defn route?
   [path]

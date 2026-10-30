@@ -31,7 +31,7 @@ test("parseCliArgs accepts required args and defaults output", () => {
   ]);
 
   assert.equal(parsed.graphId, "graph-1");
-  assert.equal(parsed.baseUrl, "https://api.logseq.com");
+  assert.equal(parsed.baseUrl, "https://192.168.2.22:8080");
   assert.equal(parsed.adminToken, "admin-token-value");
   assert.equal(parsed.output, path.resolve("tmp", "graph-graph-1.snapshot.sqlite"));
 });
